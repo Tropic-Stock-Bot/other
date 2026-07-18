@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Confirmed | Shopbloxy</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Inter,Arial,sans-serif;
+}
+
+body{
+    background:#0d0f11;
+    color:#fff;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+.card{
+    width:100%;
+    max-width:760px;
+    background:#17191d;
+    border:1px solid #2d3138;
+    border-radius:22px;
+    padding:50px;
+    text-align:center;
+    box-shadow:0 15px 60px rgba(0,0,0,.35);
+}
+
+.check{
+    width:90px;
+    height:90px;
+    margin:0 auto 30px;
+    border-radius:50%;
+    background:#00d27a;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:42px;
+    font-weight:bold;
+    color:#0d1117;
+}
+
+h1{
+    font-size:42px;
+    margin-bottom:18px;
+}
+
+p{
+    color:#b9c0ca;
+    line-height:1.7;
+    font-size:18px;
+    margin-bottom:18px;
+}
+
+.button-row{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:22px;
+}
+
+.button{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    min-height:50px;
+    padding:14px 30px;
+    border-radius:999px;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:800;
+    transition:transform .2s, filter .2s, background .2s;
+}
+
+.button:hover{
+    transform:translateY(-2px);
+    filter:brightness(1.08);
+}
+
+.discord{
+    background:#5865F2;
+    color:#fff;
+}
+
+.back{
+    background:#272b31;
+    border:1px solid #3b414a;
+    color:#fff;
+}
+
+.back:hover{
+    background:#30353d;
+}
+
+.info{
+    margin-top:40px;
+    text-align:left;
+    background:#111317;
+    border:1px solid #2d3138;
+    border-radius:16px;
+    padding:24px;
+}
+
+.info p{
+    margin:10px 0;
+    font-size:16px;
+    overflow-wrap:anywhere;
+}
+
+.label{
+    color:#fff;
+    font-weight:600;
+}
+
+.status{
+    color:#00d27a;
+    font-weight:bold;
+}
+
+.footer{
+    margin-top:35px;
+    font-size:14px;
+    color:#7d8792;
+}
+
+@media(max-width:700px){
+    body{
+        padding:16px;
+    }
+
+    .card{
+        padding:35px 22px;
+    }
+
+    .check{
+        width:76px;
+        height:76px;
+        font-size:36px;
+    }
+
+    h1{
+        font-size:34px;
+    }
+
+    p{
+        font-size:16px;
+    }
+
+    .button-row{
+        flex-direction:column;
+    }
+
+    .button{
+        width:100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<main class="card">
+
+    <div class="check">✓</div>
+
+    <h1>Payment Successful</h1>
+
+    <p>
+        Thank you for your purchase! Your payment has been received successfully.
+    </p>
+
+    <p>
+        <strong>You will receive your item in less than 24 hours.</strong>
+    </p>
+
+    <p>
+        To view the status of your order, receive support, report an item you
+        have not received, or ask any questions, please join our Discord server.
+    </p>
+
+    <p>
+        We recommend joining now so our team can contact you if needed and keep
+        you updated about your order.
+    </p>
+
+    <div class="button-row">
+        <a
+            class="button discord"
+            href="https://discord.gg/D9F4627DA5"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Join our Discord
+        </a>
+
+        <a class="button back" href="index.html">
+            Back to Shop
+        </a>
+    </div>
+
+    <div class="info">
+        <p>
+            <span class="label">Order Status:</span>
+            <span id="status" class="status">Loading...</span>
+        </p>
+
+        <p>
+            <span class="label">Order ID:</span>
+            <span id="orderid">Loading...</span>
+        </p>
+
+        <p>
+            <span class="label">Items:</span>
+            <span id="items">Loading...</span>
+        </p>
+    </div>
+
+    <div class="footer">
+        Shopbloxy • Thank you for choosing us.
+    </div>
+
+</main>
+
+<script>
+const API = "https://dropjetic.pythonanywhere.com";
+
+const params = new URLSearchParams(window.location.search);
+const session = params.get("session_id");
+
+const statusElement = document.getElementById("status");
+const orderIdElement = document.getElementById("orderid");
+const itemsElement = document.getElementById("items");
+
+async function loadOrder() {
+    if (!session) {
+        statusElement.textContent = "Missing checkout session";
+        orderIdElement.textContent = "-";
+        itemsElement.textContent = "-";
+        return;
+    }
+
+    try {
+        const response = await fetch(
+            API + "/api/order-status?session_id=" + encodeURIComponent(session)
+        );
+
+        const data = await response.json();
+
+        if (!response.ok) {
+            throw new Error(data.error || "Could not retrieve order.");
+        }
+
+        statusElement.textContent =
+            data.status === "fulfilled"
+                ? "Order Confirmed"
+                : "Payment Received • Processing";
+
+        orderIdElement.textContent = data.order_id || "Unknown";
+        itemsElement.textContent = data.items || "Unknown";
+
+    } catch (error) {
+        statusElement.textContent = "Payment Received • Processing";
+        orderIdElement.textContent = "-";
+        itemsElement.textContent = "-";
+    }
+}
+
+loadOrder();
+</script>
+
+</body>
+</html>

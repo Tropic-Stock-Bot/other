@@ -16,19 +16,15 @@
     rates: readJson(RATES_KEY, null) || {},
     toastTimer: 0
   };
-
   function byId(id) {
     return document.getElementById(id);
   }
-
   function text(value) {
     return String(value == null ? "" : value);
   }
-
   function slug(value) {
     return text(value).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
   }
-
   function readJson(key, fallback) {
     try {
       var value = JSON.parse(localStorage.getItem(key) || "null");
@@ -37,27 +33,22 @@
       return fallback;
     }
   }
-
   function writeJson(key, value) {
     localStorage.setItem(key, JSON.stringify(value));
   }
-
   function rate(code) {
     return Number(state.rates[code] || CURRENCIES[code].rate || 1);
   }
-
   function money(value) {
     var code = state.currency;
     var meta = CURRENCIES[code] || CURRENCIES.USD;
     return meta.symbol + (Number(value || 0) * rate(code)).toFixed(2);
   }
-
   function fetchJson(path, fallback) {
     return fetch(path, { cache: "no-store" })
       .then(function (res) { return res.ok ? res.json() : fallback; })
       .catch(function () { return fallback; });
   }
-
   function refreshRates() {
     fetch("https://open.er-api.com/v6/latest/USD", { cache: "no-store" })
       .then(function (res) { return res.ok ? res.json() : null; })
@@ -71,7 +62,6 @@
       })
       .catch(function () {});
   }
-
   function fallbackData() {
     return {
       currency: "USD",
@@ -90,7 +80,6 @@
       }
     };
   }
-
   function allProducts() {
     var list = [];
     var products = (state.data && state.data.products) || {};
@@ -101,31 +90,26 @@
     });
     return list;
   }
-
   function productById(id) {
     return allProducts().filter(function (product) {
       return text(product.id || slug(product.name)) === text(id);
     })[0] || null;
   }
-
   function productByName(name) {
     return allProducts().filter(function (product) {
       return text(product.name).toLowerCase() === text(name).toLowerCase();
     })[0] || null;
   }
-
   function gameById(id) {
     return ((state.data && state.data.games) || []).filter(function (game) {
       return game.id === id;
     })[0] || { id: id, name: id };
   }
-
   function placeholder(label) {
     var safe = text(label || "Image").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
     var svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eafff4"/><stop offset="1" stop-color="#d9fce9"/></linearGradient><pattern id="p" width="64" height="64" patternUnits="userSpaceOnUse"><path d="M64 0H0V64" fill="none" stroke="#00df82" stroke-opacity=".14" stroke-width="2"/></pattern></defs><rect width="800" height="800" rx="42" fill="url(#g)"/><rect width="800" height="800" fill="url(#p)"/><circle cx="640" cy="160" r="170" fill="#00df82" opacity=".14"/><rect x="170" y="255" width="460" height="290" rx="32" fill="#fff" opacity=".72"/><path d="M245 468l94-110 82 88 52-60 92 82" fill="none" stroke="#00df82" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/><text x="400" y="635" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="42" font-weight="800" fill="#101711">' + safe + '</text></svg>';
     return "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(svg);
   }
-
   function imageAttempts(src) {
     var value = text(src);
     var attempts = [];
@@ -139,7 +123,6 @@
     }
     return attempts;
   }
-
   function setImage(img, src, label) {
     var attempts = imageAttempts(src);
     if (!attempts.length) attempts.push(placeholder(label));
@@ -155,14 +138,12 @@
     };
     img.src = attempts[0];
   }
-
   function frameForPrice(price) {
     var amount = Math.round(Number(price || 0) * 100) / 100;
     if (amount <= 10) return "bronzeframe.png";
     if (amount < 15) return "silverframe.png";
     return "goldframe.png";
   }
-
   function showToast(message) {
     var toast = byId("toast");
     if (!toast) {
@@ -178,12 +159,10 @@
       toast.classList.remove("visible");
     }, 1700);
   }
-
   function saveCart() {
     writeJson(CART_KEY, state.cart);
     updateCartCount();
   }
-
   function cartItems() {
     return state.cart.map(function (line) {
       var product = productById(line.id);
@@ -191,13 +170,11 @@
       return Object.assign({}, product, { quantity: Number(line.quantity || 1) });
     }).filter(Boolean);
   }
-
   function cartTotal(items) {
     return (items || cartItems()).reduce(function (total, item) {
       return total + Number(item.price || 0) * Number(item.quantity || 1);
     }, 0);
   }
-
   function addToCart(product, openCartAfter) {
     var id = product.id || slug(product.name);
     var line = state.cart.filter(function (item) { return item.id === id; })[0];
@@ -208,7 +185,6 @@
     showToast(product.name + " added to cart");
     if (openCartAfter) openCart();
   }
-
   function setQuantity(id, quantity) {
     var next = Math.max(0, Number(quantity || 0));
     state.cart = state.cart.filter(function (line) {
@@ -220,7 +196,6 @@
     renderCart();
     renderPurchase();
   }
-
   function updateCartCount() {
     var count = state.cart.reduce(function (sum, line) { return sum + Number(line.quantity || 0); }, 0);
     var countEl = byId("cart-count");
@@ -231,21 +206,18 @@
       node.textContent = count;
     });
   }
-
   function openCart() {
     var overlay = byId("shopbloxy-cart-overlay");
     var drawer = byId("shopbloxy-cart-drawer");
     if (overlay) overlay.classList.add("visible");
     if (drawer) drawer.classList.add("open");
   }
-
   function closeCart() {
     var overlay = byId("shopbloxy-cart-overlay");
     var drawer = byId("shopbloxy-cart-drawer");
     if (overlay) overlay.classList.remove("visible");
     if (drawer) drawer.classList.remove("open");
   }
-
   function renderShell() {
     var oldStaticDrawer = document.querySelector('body > div#root > div.fixed.top-0.right-0.h-full');
     if (oldStaticDrawer) oldStaticDrawer.remove();
@@ -278,7 +250,6 @@
       renderPurchase();
     });
   }
-
   function renderCart() {
     var target = byId("cart-lines");
     if (!target) return;
@@ -308,7 +279,6 @@
     if (subtotal) subtotal.textContent = money(cartTotal(items));
     updateCartCount();
   }
-
   function productCard(product, compact) {
     var card = document.createElement("div");
     card.className = "product-card group relative bg-surface rounded-2xl border border-line cursor-pointer transition-[border-color,transform,box-shadow] duration-200 hover:border-accent-line hover:shadow-card overflow-visible flex-shrink-0 w-[200px] sm:w-[260px] md:w-[280px] lg:w-[300px] flex flex-col";
@@ -357,7 +327,6 @@
     });
     return card;
   }
-
   function renderProductPage() {
     var gameId = document.body.getAttribute("data-game-id");
     if (!gameId) return;
@@ -401,7 +370,6 @@
       grid.appendChild(block);
     });
   }
-
   function renderHomeProductSections() {
     var target = byId("shop-product-sections");
     if (!target || !state.data) return;
@@ -409,11 +377,9 @@
     if (wrapper) wrapper.remove();
     else target.remove();
   }
-
   function cleanHomepage() {
     var shopProducts = byId("shop-products");
     if (shopProducts) shopProducts.remove();
-
     var gameCards = Array.prototype.slice.call(document.querySelectorAll("a.group.flex.flex-col"));
     gameCards.forEach(function (card) {
       var label = card.querySelector("p.text-ink");
@@ -433,7 +399,6 @@
       }
     });
   }
-
   function connectHomeButtons() {
     cleanHomepage();
     document.querySelectorAll("a[href]").forEach(function (link) {
@@ -477,7 +442,6 @@
       }
     });
   }
-
   function setupCurrency() {
     var button = byId("currency-toggle-btn") || document.querySelector('button[aria-label="Toggle currency selector"]');
     var symbol = byId("currency-symbol") || (button && button.querySelector("span"));
@@ -495,7 +459,6 @@
       showToast("Currency set to " + state.currency);
     });
   }
-
   function purchaseItems() {
     var params = new URLSearchParams(window.location.search);
     var productId = params.get("product");
@@ -505,7 +468,6 @@
     }
     return cartItems();
   }
-
   function renderPurchase() {
     if (document.body.getAttribute("data-page") !== "purchase" || !state.data) return;
     var items = purchaseItems();
@@ -535,19 +497,64 @@
     var form = byId("purchase-form");
     if (!form || form.dataset.ready) return;
     form.dataset.ready = "true";
+
     form.addEventListener("submit", function (event) {
       event.preventDefault();
-      var user = byId("roblox-username");
-      var contact = byId("contact");
-      if (!purchaseItems().length) return showToast("Choose an item first");
-      if (!user.value.trim() || !contact.value.trim()) return showToast("Add your Roblox username and contact");
-      byId("purchase-result").innerHTML = '<div class="rounded-2xl border border-accent-line bg-accent-soft p-4 text-sm text-ink"><strong>Order ready.</strong><br>This is ready to connect to Stripe, PayPal, crypto, or a Discord ticket webhook.</div>';
-      showToast("Order ready");
-      if (new URLSearchParams(window.location.search).get("cart")) {
-        state.cart = [];
-        saveCart();
-        renderCart();
-      }
+
+      var username = byId("roblox-username").value.trim();
+      var contact = byId("contact").value.trim();
+      var deliverySpeed = byId("delivery-speed").value;
+      var notes = byId("notes").value.trim();
+
+      if (!username) return showToast("Please enter your Roblox username");
+      if (!contact) return showToast("Please enter your Discord or email");
+
+      var items = purchaseItems();
+      if (!items.length) return showToast("No items in cart");
+
+      var cart = items.map(function(item) {
+        return {
+          product_id: item.id || item.product_id,
+          quantity: Number(item.quantity || 1)
+        };
+      });
+
+      var payload = {
+        username: username,
+        email: contact,
+        delivery_speed: deliverySpeed,
+        notes: notes,
+        cart: cart
+      };
+
+      var resultDiv = byId("purchase-result");
+      resultDiv.innerHTML = '<div class="text-sm text-ink-soft">Connecting to payment...</div>';
+
+      fetch('https://dropjetic.pythonanywhere.com/api/create-checkout-session', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Request-ID': 'purchase-' + Date.now()
+        },
+        body: JSON.stringify(payload)
+      })
+      .then(function(res) {
+        return res.json().then(function(data) {
+          return { ok: res.ok, data: data };
+        });
+      })
+      .then(function(result) {
+        if (result.ok && result.data.checkout_url) {
+          window.location.href = result.data.checkout_url;
+        } else {
+          throw new Error(result.data.error || "Failed to start checkout");
+        }
+      })
+      .catch(function(err) {
+        console.error(err);
+        resultDiv.innerHTML = '<div class="rounded-2xl border border-red-300 bg-red-50 p-4 text-sm text-red-700">' + err.message + '</div>';
+        showToast("Payment error - check console");
+      });
     });
   }
 
@@ -559,7 +566,6 @@
     renderCart();
     renderPurchase();
   }
-
   function boot() {
     fetchJson("shopbloxy-products.json", state.data || fallbackData()).then(function (data) {
       state.data = data;
@@ -571,6 +577,5 @@
       refreshRates();
     });
   }
-
   document.addEventListener("DOMContentLoaded", boot);
 })();

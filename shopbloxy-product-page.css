@@ -1,5 +1,5 @@
-@import url("https://petmart.fun/assets/index-Bz0h30lZ.css");
-@import url("https://petmart.fun/assets/toast-GNLSjkBZ.css");
+@import url("./assets/index-Bz0h30lZ.css");
+@import url("./assets/toast-GNLSjkBZ.css");
 
 .custom-scrollbar::-webkit-scrollbar {
   width: 8px;

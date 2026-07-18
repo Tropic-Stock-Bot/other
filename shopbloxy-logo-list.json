@@ -1,0 +1,23 @@
+{
+  "gameLogos": {
+    "Grow a Garden 2": "grow-a-garden-2.png",
+    "Sailor Piece": "sailorpeice.png",
+    "Grand Piece Online": "grandpieceonline.png",
+    "Steal a Brainrot": "stealabrainrot.png",
+    "Blox Fruits": "bloxfruits.png",
+    "Rivals": "rivals.png",
+    "Escape Tsunami For Brainrots": "escapetsunamiforbrainrots.png",
+    "Adopt Me": "adoptme.png",
+    "Murder Mystery 2": "murdermystery2.png",
+    "Grow A Garden": "growagarden.png",
+    "99 Nights in the Forest": "99nightsintheforest.png",
+    "The Forge": "theforge.png"
+  },
+  "sampleProductImages": {
+    "Permanent Dragon": "permanent-dragon.png",
+    "Permanent Kitsune": "permanent-kitsune.png",
+    "Unicorn": "unicorn.png",
+    "Raccoon": "raccoon.png"
+  },
+  "note": "Put these files inside a downloads folder next to the HTML file, or replace paths with full image URLs."
+}

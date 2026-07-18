@@ -1,0 +1,181 @@
+@import url("https://petmart.fun/assets/index-Bz0h30lZ.css");
+@import url("https://petmart.fun/assets/toast-GNLSjkBZ.css");
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--color-surface-sunk);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-line-strong);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.product-card {
+  min-height: 100%;
+}
+
+.product-image-shell {
+  background: linear-gradient(180deg, var(--color-surface-raised), var(--color-surface));
+}
+
+.product-image-frame {
+  aspect-ratio: 1 / 1;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  padding: 22px;
+}
+
+.product-frame-image {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  pointer-events: none;
+}
+
+.product-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 178px;
+  max-height: 178px;
+  object-fit: contain;
+  object-position: center;
+}
+
+@media (min-width: 640px) {
+  .product-image-frame {
+    padding: 28px;
+  }
+
+  .product-image {
+    max-width: 204px;
+    max-height: 204px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-image-frame {
+    padding: 32px;
+  }
+
+  .product-image {
+    max-width: 220px;
+    max-height: 220px;
+  }
+}
+
+.toast {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 10000;
+  max-width: calc(100% - 36px);
+  border: 1px solid var(--color-accent-line);
+  border-radius: 14px;
+  background: var(--color-surface);
+  color: var(--color-ink);
+  padding: 13px 16px;
+  font-size: 14px;
+  font-weight: 800;
+  box-shadow: var(--shadow-pop);
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition: opacity .18s ease, transform .18s ease;
+}
+
+.toast.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.shopbloxy-cart-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99998;
+  background: rgba(0, 0, 0, .35);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease;
+}
+
+.shopbloxy-cart-overlay.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.shopbloxy-cart-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99999;
+  display: flex;
+  width: min(400px, 100%);
+  height: 100%;
+  flex-direction: column;
+  border-left: 1px solid var(--color-line);
+  background: var(--color-surface-sunk);
+  box-shadow: var(--shadow-pop);
+  transform: translateX(100%);
+  transition: transform .22s ease;
+}
+
+.shopbloxy-cart-drawer.open {
+  transform: translateX(0);
+}
+
+.purchase-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.purchase-field label {
+  color: var(--color-ink);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.purchase-field input,
+.purchase-field select,
+.purchase-field textarea {
+  width: 100%;
+  border: 1px solid var(--color-line-strong);
+  border-radius: 14px;
+  background: var(--color-surface);
+  color: var(--color-ink);
+  padding: 12px 14px;
+  outline: none;
+}
+
+.purchase-field input:focus,
+.purchase-field select:focus,
+.purchase-field textarea:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 4px var(--color-accent-soft);
+}

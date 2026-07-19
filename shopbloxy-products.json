@@ -133,7 +133,7 @@
       {
         "id": "bf-permanent-spirit",
         "name": "Permanent Spirit",
-        "price": 15.30,
+        "price": 16.00,
         "image": "permanent-spirit.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -142,7 +142,7 @@
       {
         "id": "bf-permanent-venom",
         "name": "Permanent Venom",
-        "price": 14.70,
+        "price": 15.00,
         "image": "permanent-venom.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -151,7 +151,7 @@
       {
         "id": "bf-permanent-shadow",
         "name": "Permanent Shadow",
-        "price": 14.55,
+        "price": 15.00,
         "image": "permanent-shadow.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -160,7 +160,7 @@
       {
         "id": "bf-permanent-dough",
         "name": "Permanent Dough",
-        "price": 14.40,
+        "price": 15.00,
         "image": "permanent-dough.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -169,7 +169,7 @@
       {
         "id": "bf-permanent-t-rex",
         "name": "Permanent T-Rex",
-        "price": 14.10,
+        "price": 14.00,
         "image": "permanent-t-rex.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -178,7 +178,7 @@
       {
         "id": "bf-permanent-mammoth",
         "name": "Permanent Mammoth",
-        "price": 14.10,
+        "price": 14.00,
         "image": "permanent-mammoth.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -187,7 +187,7 @@
       {
         "id": "bf-permanent-gravity",
         "name": "Permanent Gravity",
-        "price": 13.80,
+        "price": 14.00,
         "image": "permanent-gravity.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -196,7 +196,7 @@
       {
         "id": "bf-permanent-blizzard",
         "name": "Permanent Blizzard",
-        "price": 13.50,
+        "price": 14.00,
         "image": "permanent-blizzard.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -205,7 +205,7 @@
       {
         "id": "bf-permanent-pain",
         "name": "Permanent Pain",
-        "price": 13.20,
+        "price": 13.00,
         "image": "permanent-pain.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -214,7 +214,7 @@
       {
         "id": "bf-permanent-lightning",
         "name": "Permanent Lightning",
-        "price": 12.60,
+        "price": 13.00,
         "image": "permanent-lightning.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -241,7 +241,7 @@
       {
         "id": "bf-permanent-sound",
         "name": "Permanent Sound",
-        "price": 11.40,
+        "price": 12.00,
         "image": "permanent-sound.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -250,7 +250,7 @@
       {
         "id": "bf-permanent-spider",
         "name": "Permanent Spider",
-        "price": 10.80,
+        "price": 11.00,
         "image": "permanent-spider.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -259,7 +259,7 @@
       {
         "id": "bf-permanent-creation",
         "name": "Permanent Creation",
-        "price": 10.50,
+        "price": 11.00,
         "image": "permanent-creation.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -268,7 +268,7 @@
       {
         "id": "bf-permanent-love",
         "name": "Permanent Love",
-        "price": 10.20,
+        "price": 10.00,
         "image": "permanent-love.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -277,7 +277,7 @@
       {
         "id": "bf-permanent-buddha",
         "name": "Permanent Buddha",
-        "price": 9.90,
+        "price": 10.00,
         "image": "permanent-buddha.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -295,7 +295,7 @@
       {
         "id": "bf-permanent-magma",
         "name": "Permanent Magma",
-        "price": 7.80,
+        "price": 8.00,
         "image": "permanent-magma.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -304,7 +304,7 @@
       {
         "id": "bf-permanent-ghost",
         "name": "Permanent Ghost",
-        "price": 7.65,
+        "price": 8.00,
         "image": "permanent-ghost.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -313,7 +313,7 @@
       {
         "id": "bf-permanent-rubber",
         "name": "Permanent Rubber",
-        "price": 7.20,
+        "price": 7.00,
         "image": "permanent-rubber.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -322,7 +322,7 @@
       {
         "id": "bf-permanent-light",
         "name": "Permanent Light",
-        "price": 6.60,
+        "price": 7.00,
         "image": "permanent-light.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -340,7 +340,7 @@
       {
         "id": "bf-permanent-eagle",
         "name": "Permanent Eagle",
-        "price": 5.85,
+        "price": 6.00,
         "image": "permanent-eagle.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -349,7 +349,7 @@
       {
         "id": "bf-permanent-dark",
         "name": "Permanent Dark",
-        "price": 5.70,
+        "price": 6.00,
         "image": "permanent-dark.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -358,7 +358,7 @@
       {
         "id": "bf-permanent-sand",
         "name": "Permanent Sand",
-        "price": 5.10,
+        "price": 5.00,
         "image": "permanent-sand.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -367,7 +367,7 @@
       {
         "id": "bf-permanent-ice",
         "name": "Permanent Ice",
-        "price": 4.50,
+        "price": 5.00,
         "image": "permanent-ice.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -376,7 +376,7 @@
       {
         "id": "bf-permanent-flame",
         "name": "Permanent Flame",
-        "price": 3.30,
+        "price": 3.00,
         "image": "permanent-flame.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -385,7 +385,7 @@
       {
         "id": "bf-permanent-spike",
         "name": "Permanent Spike",
-        "price": 2.28,
+        "price": 2.00,
         "image": "permanent-spike.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -394,7 +394,7 @@
       {
         "id": "bf-permanent-smoke",
         "name": "Permanent Smoke",
-        "price": 1.50,
+        "price": 2.00,
         "image": "permanent-smoke.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -403,7 +403,7 @@
       {
         "id": "bf-permanent-bomb",
         "name": "Permanent Bomb",
-        "price": 1.32,
+        "price": 1.00,
         "image": "permanent-bomb.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -412,7 +412,7 @@
       {
         "id": "bf-permanent-spring",
         "name": "Permanent Spring",
-        "price": 1.08,
+        "price": 1.00,
         "image": "permanent-spring.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -421,7 +421,7 @@
       {
         "id": "bf-permanent-blade",
         "name": "Permanent Blade",
-        "price": 0.60,
+        "price": 1.00,
         "image": "permanent-blade.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -430,7 +430,7 @@
       {
         "id": "bf-permanent-spin",
         "name": "Permanent Spin",
-        "price": 0.45,
+        "price": 0.00,
         "image": "permanent-spin.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -439,7 +439,7 @@
       {
         "id": "bf-permanent-rocket",
         "name": "Permanent Rocket",
-        "price": 0.30,
+        "price": 0.00,
         "image": "permanent-rocket.png",
         "type": "Fruit",
         "badge": "Very fast delivery",
@@ -450,7 +450,7 @@
       {
         "id": "gag2-x1-moon-bloom-seed",
         "name": "x1 Moon Bloom Seed",
-        "price": 5.24,
+        "price": 5.00,
         "image": "x1-moon-bloom-seed.png",
         "type": "Seed",
         "badge": "Very fast delivery",
@@ -459,7 +459,7 @@
       {
         "id": "gag2-x5-moon-bloom-seed",
         "name": "x5 Moon Bloom Seed",
-        "price": 19.94,
+        "price": 20.00,
         "image": "x5-moon-bloom-seed.png",
         "type": "Seed",
         "badge": "14 Left",
@@ -468,7 +468,7 @@
       {
         "id": "gag2-x10-moon-bloom-seed",
         "name": "x10 Moon Bloom Seed",
-        "price": 34.64,
+        "price": 35.00,
         "image": "x10-moon-bloom-seed.png",
         "type": "Seed",
         "badge": "7 Left",
@@ -477,7 +477,7 @@
       {
         "id": "gag2-x20-moon-bloom-seed",
         "name": "x20 Moon Bloom Seed",
-        "price": 57.74,
+        "price": 59.00,
         "image": "x20-moon-bloom-seed.png",
         "type": "Seed",
         "badge": "3 Left",
@@ -486,7 +486,7 @@
       {
         "id": "gag2-x5-super-watering-can",
         "name": "x5 Super Watering Can",
-        "price": 7.34,
+        "price": 7.00,
         "image": "x5-super-watering-can.png",
         "type": "Gear",
         "badge": "48 Left",
@@ -495,7 +495,7 @@
       {
         "id": "gag2-x3-super-watering-can",
         "name": "x3 Super Watering Can",
-        "price": 4.19,
+        "price": 4.00,
         "image": "x3-super-watering-can.png",
         "type": "Gear",
         "badge": "80 Left",
@@ -504,7 +504,7 @@
       {
         "id": "gag2-x1-super-watering-can",
         "name": "x1 Super Watering Can",
-        "price": 1.56,
+        "price": 2.00,
         "image": "x1-super-watering-can.png",
         "type": "Gear",
         "badge": "241 Left",
@@ -513,7 +513,7 @@
       {
         "id": "gag2-x3-super-sprinkler",
         "name": "x3 Super Sprinkler",
-        "price": 4.19,
+        "price": 4.00,
         "image": "x3-super-sprinkler.png",
         "type": "Gear",
         "badge": "115 Left",
@@ -522,7 +522,7 @@
       {
         "id": "gag2-x5-super-sprinkler",
         "name": "x5 Super Sprinkler",
-        "price": 7.34,
+        "price": 7.00,
         "image": "x5-super-sprinkler.png",
         "type": "Gear",
         "badge": "69 Left",
@@ -531,7 +531,7 @@
       {
         "id": "gag2-x50-rainbow-seed",
         "name": "x50 Rainbow Seed",
-        "price": 9.44,
+        "price": 10.00,
         "image": "x50-rainbow-seed.png",
         "type": "Seed",
         "badge": "46 Left",
@@ -540,7 +540,7 @@
       {
         "id": "gag2-x20-ghost-pepper-seed",
         "name": "x20 Ghost Pepper Seed",
-        "price": 25.19,
+        "price": 26.00,
         "image": "x20-ghost-pepper-seed.png",
         "type": "Seed",
         "badge": "7 Left",
@@ -549,7 +549,7 @@
       {
         "id": "gag2-x10-ghost-pepper-seed",
         "name": "x10 Ghost Pepper Seed",
-        "price": 14.69,
+        "price": 15.00,
         "image": "x10-ghost-pepper-seed.png",
         "type": "Seed",
         "badge": "15 Left",
@@ -558,7 +558,7 @@
       {
         "id": "gag2-x5-ghost-pepper-seed",
         "name": "x5 Ghost Pepper Seed",
-        "price": 9.44,
+        "price": 10.00,
         "image": "x5-ghost-pepper-seed.png",
         "type": "Seed",
         "badge": "30 Left",
@@ -567,7 +567,7 @@
       {
         "id": "gag2-x20-dragon-s-breath-seed",
         "name": "x20 Dragon's Breath Seed",
-        "price": 50.39,
+        "price": 51.00,
         "image": "x20-dragon-s-breath-seed.png",
         "type": "Seed",
         "badge": "5 Left",
@@ -576,7 +576,7 @@
       {
         "id": "gag2-x10-dragon-s-breath-seed",
         "name": "x10 Dragon's Breath Seed",
-        "price": 28.34,
+        "price": 29.00,
         "image": "x10-dragon-s-breath-seed.png",
         "type": "Seed",
         "badge": "11 Left",
@@ -585,7 +585,7 @@
       {
         "id": "gag2-x5-dragon-s-breath-seed",
         "name": "x5 Dragon's Breath Seed",
-        "price": 17.84,
+        "price": 18.00,
         "image": "x5-dragon-s-breath-seed.png",
         "type": "Seed",
         "badge": "22 Left",
@@ -594,7 +594,7 @@
       {
         "id": "gag2-x100-rainbow-seed",
         "name": "x100 Rainbow Seed",
-        "price": 16.79,
+        "price": 17.00,
         "image": "x100-rainbow-seed.png",
         "type": "Seed",
         "badge": "23 Left",
@@ -603,7 +603,7 @@
       {
         "id": "gag2-x500-rainbow-seed",
         "name": "x500 Rainbow Seed",
-        "price": 62.99,
+        "price": 64.00,
         "image": "x500-rainbow-seed.png",
         "type": "Seed",
         "badge": "4 Left",
@@ -612,7 +612,7 @@
       {
         "id": "gag2-x1000-rainbow-seed",
         "name": "x1000 Rainbow Seed",
-        "price": 104.99,
+        "price": 107.00,
         "image": "x1000-rainbow-seed.png",
         "type": "Seed",
         "badge": "2 Left",
@@ -621,7 +621,7 @@
       {
         "id": "gag2-x100-gold-seed",
         "name": "x100 Gold Seed",
-        "price": 0.60,
+        "price": 1.00,
         "image": "x100-gold-seed.png",
         "type": "Seed",
         "badge": "6 Left",
@@ -639,7 +639,7 @@
       {
         "id": "gag2-unicorn",
         "name": "Unicorn",
-        "price": 4.19,
+        "price": 4.00,
         "image": "unicorn.png",
         "type": "Pet",
         "badge": "53 Left",
@@ -648,7 +648,7 @@
       {
         "id": "gag2-golden-dragonfly",
         "name": "Golden Dragonfly",
-        "price": 3.14,
+        "price": 3.00,
         "image": "golden-dragonfly.png",
         "type": "Pet",
         "badge": "102 Left",
@@ -657,7 +657,7 @@
       {
         "id": "gag2-rainbow-carpet",
         "name": "Rainbow Magic Carpet",
-        "price": 3.59,
+        "price": 4.00,
         "image": "rainbow-magic-carpet.png",
         "type": "Gamepass",
         "badge": "Very fast delivery",
@@ -666,7 +666,7 @@
       {
         "id": "gag2-power-hose",
         "name": "Power Hose",
-        "price": 1.80,
+        "price": 2.00,
         "image": "power-hose.png",
         "type": "Gamepass",
         "badge": "Very fast delivery",
@@ -675,7 +675,7 @@
       {
         "id": "gag2-freeze-ray",
         "name": "Freeze Ray!",
-        "price": 4.49,
+        "price": 5.00,
         "image": "freeze-ray.png",
         "type": "Gamepass",
         "badge": "Very fast delivery",
@@ -684,7 +684,7 @@
       {
         "id": "gag2-vine-wrapper",
         "name": "Vine Wrapper",
-        "price": 2.99,
+        "price": 3.00,
         "image": "vine-wrapper.png",
         "type": "Gamepass",
         "badge": "Very fast delivery",
@@ -693,7 +693,7 @@
       {
         "id": "gag2-ghost-pepper-pack-50-roll",
         "name": "Ghost Pepper Pack 50 Roll",
-        "price": 26.24,
+        "price": 27.00,
         "image": "ghost-pepper-pack-50-roll.png",
         "type": "Pack",
         "badge": "Very fast delivery",
@@ -702,7 +702,7 @@
       {
         "id": "gag2-ghost-pepper-pack-10-roll",
         "name": "Ghost Pepper Pack 10 Roll",
-        "price": 6.29,
+        "price": 6.00,
         "image": "ghost-pepper-pack-10-roll.png",
         "type": "Pack",
         "badge": "Very fast delivery",
@@ -711,7 +711,7 @@
       {
         "id": "gag2-ghost-pepper-pack-3-roll",
         "name": "Ghost Pepper Pack 3 Roll",
-        "price": 2.09,
+        "price": 2.00,
         "image": "ghost-pepper-pack-3-roll.png",
         "type": "Pack",
         "badge": "Very fast delivery",
@@ -720,7 +720,7 @@
       {
         "id": "gag2-ghost-pepper-pack-1-roll",
         "name": "Ghost Pepper Pack 1 Roll",
-        "price": 1.04,
+        "price": 1.00,
         "image": "ghost-pepper-pack-1-roll.png",
         "type": "Pack",
         "badge": "Very fast delivery",
@@ -729,7 +729,7 @@
       {
         "id": "gag2-x1-super-sprinkler",
         "name": "x1 Super Sprinkler",
-        "price": 1.56,
+        "price": 2.00,
         "image": "x1-super-sprinkler.png",
         "type": "Gear",
         "badge": "345 Left",
@@ -743,7 +743,7 @@
       {
         "id": "rivals-skin-case-3-x3",
         "name": "Skin Case 3 [x3]",
-        "price": 4.92,
+        "price": 5.00,
         "image": "skin-case-3-x3.png",
         "type": "Case",
         "badge": "Very fast delivery",
@@ -753,7 +753,7 @@
       {
         "id": "rivals-skin-case-2-x3",
         "name": "Skin Case 2 [x3]",
-        "price": 4.92,
+        "price": 5.00,
         "image": "skin-case-2-x3.png",
         "type": "Case",
         "badge": "Best Seller",
@@ -763,7 +763,7 @@
       {
         "id": "rivals-skin-case-1-x3",
         "name": "Skin Case 1 [x3]",
-        "price": 4.92,
+        "price": 5.00,
         "image": "skin-case-1-x3.png",
         "type": "Case",
         "badge": "Best Seller",
@@ -773,7 +773,7 @@
       {
         "id": "rivals-medkit-bundle",
         "name": "Medkit Bundle",
-        "price": 1.67,
+        "price": 2.00,
         "image": "medkit-bundle.png",
         "type": "Bundle",
         "badge": "Best Seller",
@@ -783,7 +783,7 @@
       {
         "id": "rivals-contraband-bundle",
         "name": "Contraband Bundle",
-        "price": 6.81,
+        "price": 7.00,
         "image": "contraband-bundle.png",
         "type": "Bundle",
         "badge": "Best Seller",
@@ -793,7 +793,7 @@
       {
         "id": "rivals-classic-bundle",
         "name": "Classic Bundle",
-        "price": 7.86,
+        "price": 8.00,
         "image": "classic-bundle.png",
         "type": "Bundle",
         "badge": "Best Seller",
@@ -803,7 +803,7 @@
       {
         "id": "rivals-heavy-duty-bundle",
         "name": "Heavy Duty Bundle",
-        "price": 13.01,
+        "price": 13.00,
         "image": "heavy-duty-bundle.png",
         "type": "Bundle",
         "badge": "Best Seller",
@@ -813,7 +813,7 @@
       {
         "id": "rivals-exogun-bundle",
         "name": "Exogun Bundle",
-        "price": 4.40,
+        "price": 4.00,
         "image": "exogun-bundle.png",
         "type": "Bundle",
         "badge": "Best Seller",
@@ -823,7 +823,7 @@
       {
         "id": "rivals-energy-bundle",
         "name": "Energy Bundle",
-        "price": 8.91,
+        "price": 9.00,
         "image": "energy-bundle.png",
         "type": "Bundle",
         "badge": "Best Seller",
@@ -833,7 +833,7 @@
       {
         "id": "rivals-nostalgia-bundle",
         "name": "Nostalgia Bundle",
-        "price": 8.91,
+        "price": 9.00,
         "image": "nostalgia-bundle.png",
         "type": "Bundle",
         "badge": "Very fast delivery",
@@ -843,7 +843,7 @@
       {
         "id": "rivals-balloon-bundle",
         "name": "Balloon Bundle",
-        "price": 5.45,
+        "price": 6.00,
         "image": "balloon-bundle.png",
         "type": "Bundle",
         "badge": "Very fast delivery",
@@ -853,7 +853,7 @@
       {
         "id": "rivals-energy-bundle-bundles",
         "name": "Energy Bundle",
-        "price": 8.91,
+        "price": 9.00,
         "image": "energy-bundle.png",
         "type": "Bundle",
         "badge": "Very fast delivery",
@@ -863,7 +863,7 @@
       {
         "id": "rivals-standard-weapons-bundle",
         "name": "Standard Weapons Bundle!",
-        "price": 6.81,
+        "price": 7.00,
         "image": "standard-weapons-bundle.png",
         "type": "Bundle",
         "badge": "Very fast delivery",
@@ -873,7 +873,7 @@
       {
         "id": "rivals-classic-bundle-bundles",
         "name": "Classic Bundle",
-        "price": 7.86,
+        "price": 8.00,
         "image": "classic-bundle.png",
         "type": "Bundle",
         "badge": "Very fast delivery",
@@ -883,7 +883,7 @@
       {
         "id": "rivals-heavy-duty-bundle-bundles",
         "name": "Heavy Duty Bundle",
-        "price": 13.01,
+        "price": 13.00,
         "image": "heavy-duty-bundle.png",
         "type": "Bundle",
         "badge": "Very fast delivery",
@@ -893,7 +893,7 @@
       {
         "id": "rivals-exogun-bundle-bundles",
         "name": "Exogun Bundle",
-        "price": 4.40,
+        "price": 4.00,
         "image": "exogun-bundle.png",
         "type": "Bundle",
         "badge": "Very fast delivery",
@@ -903,7 +903,7 @@
       {
         "id": "rivals-pixel-bundle",
         "name": "Pixel Bundle",
-        "price": 6.08,
+        "price": 6.00,
         "image": "pixel-bundle.png",
         "type": "Bundle",
         "badge": "Very fast delivery",
@@ -913,7 +913,7 @@
       {
         "id": "rivals-medkit-bundle-bundles",
         "name": "Medkit Bundle",
-        "price": 1.67,
+        "price": 2.00,
         "image": "medkit-bundle.png",
         "type": "Bundle",
         "badge": "Very fast delivery",
@@ -923,7 +923,7 @@
       {
         "id": "rivals-rpg-bundle",
         "name": "RPG Bundle",
-        "price": 1.04,
+        "price": 1.00,
         "image": "rpg-bundle.png",
         "type": "Bundle",
         "badge": "Very fast delivery",
@@ -943,7 +943,7 @@
       {
         "id": "rivals-legendary-key-bundle-x1-1k",
         "name": "Legendary Key Bundle [x1.1k]",
-        "price": 34.11,
+        "price": 35.00,
         "image": "legendary-key-bundle-x1-1k.png",
         "type": "Keys",
         "badge": "Very fast delivery",
